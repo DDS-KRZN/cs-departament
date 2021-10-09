@@ -59,6 +59,7 @@ body {
 .page{
     padding-top: 60px;
     padding-bottom: 60px;
+    position: relative;
 }
 
 .wrap{
@@ -68,3 +69,109 @@ body {
     box-sizing: border-box;
 }
 
+.page h2 {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 300;
+    color: #C2C2C2;
+    top: -20px; /* це значення підберіть використовуючи dev tools */
+    background: #FFFFFF;
+    padding: 0 20px;
+}
+
+.page .button {
+    background: #5B9AFF;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 5px 15px;
+    font-weight: normal;
+    font-size: 24px;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.page h1 {
+    font-size: 48px;
+    color: #202020;
+    font-weight: bold;
+
+}
+.page .hero-text{
+    width: 741px;
+    font-size: 32px;
+    color: #4F4F4F;
+    font-weight: normal;
+    line-height: 51px;/* висота міжрядкового інтервалу, беремо з фігми*/
+}
+
+.departments{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 20px; /*простір між рядками*/
+}
+
+.dep-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dep-item .img{
+    flex-basis: 140px; /* базовий розмір флекс елементу */
+    text-align: center;
+}
+.dep-item .text{
+    flex-basis: calc(100% - 140px); /* розміри в css можна обчислювати за допомоги функцій calc*/
+}
+
+.page-down {
+    border-top: 1px solid #C2C2C2;
+}
+
+.teachers{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 20px; /*простір між рядками*/
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);;
+}
+
+.teach-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.teach-item .img{
+    flex-basis: 140px; /* базовий розмір флекс елементу */
+    text-align: center;
+}
+.teach-item .text{
+    flex-basis: calc(100% - 140px); /* розміри в css можна обчислювати за допомоги функцій calc*/
+}
+
+footer{
+    background-color: #F7F7F7;
+}
+
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social{
+    display: flex;
+    list-style-type: none;
+}
+.social li{
+    margin-right: 20px;
+}
+.social a{
+    text-decoration: none;
+    color: #B2B2B2;
+    font-size: 24px;
+}
