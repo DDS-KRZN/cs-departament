@@ -121,6 +121,7 @@ body {
 .dep-item .img{
     flex-basis: 140px; /* базовий розмір флекс елементу */
     text-align: center;
+    max-width: 100px;
 }
 .dep-item .text{
     flex-basis: calc(100% - 140px); /* розміри в css можна обчислювати за допомоги функцій calc*/
